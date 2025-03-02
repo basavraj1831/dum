@@ -17,7 +17,7 @@ import DonorsNearby from './components/DonorsNearby'
 import Profile from './components/Profile'
 import DonorList from './components/Donorlist'
 import Update from './components/Update'
-
+import BloodBankLocator from './components/BloodBankLocator'
 
 function App() {
   const location = useLocation();
@@ -53,6 +53,7 @@ function App() {
         <Route path='/profile' element={<Profile/>}/>
         <Route path="/receiver" element={<DonorList/>} />
         <Route path="/update" element={<Update/>} />
+        <Route path="/blood-banks" element={<BloodBankLocator />} />
       </Routes>
 
       {/* Show auth modals when we have a background location */}
